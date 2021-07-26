@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-23T16:44:44.881Z",
+        "line": 17,
+        "name": "User search title verification",
+        "description": "",
+        "id": "google-search-functionality;user-search-title-verification",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12681000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User is on Google home page",
+            "match": {
+              "location": "com.angelina.step_definitions.GooglePage.user_is_on_google_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6692000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User searches for \"apple\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"apple\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.angelina.step_definitions.GooglePage.user_searches_for(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should see \"apple\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"apple\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.angelina.step_definitions.GooglePage.user_should_see_in_the_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apple"
+          }
+        ]
+      }
+    ],
+    "name": "Google search functionality",
+    "description": "  Agile Story: As a user, when I am on the google\n  search page, I should be able to search whatever\n  I want, and see relevant information",
+    "id": "google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/google.feature",
+    "tags": []
+  }
+]
